@@ -1,0 +1,19 @@
+sudo: required
+services:
+  - docker
+language: bash
+env:
+  - chisel_version=1.3.1
+script:
+# prepare qemu
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+# build image
+  - docker build --build-arg chisel_version=$chisel_version -t dtroncy/rpi-chisel .
+# push image
+  - >
+    if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+      docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+      docker tag dtroncy/rpi-chisel dtroncy/rpi-chisel:$chisel_version
+      travis_wait docker push dtroncy/rpi-chisel:$chisel_version
+      docker push dtroncy/rpi-chisel
+    fi
