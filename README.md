@@ -1,6 +1,6 @@
 # docker-rpi-chisel
 
-<img src="https://badgen.net/badge/platform/raspberry%20pi?list=1"/> <a href="https://hub.docker.com/r/dtroncy/rpi-chisel"><img src="https://badgen.net/badge/icon/docker?icon=docker&label"/></a> <a href="https://travis-ci.org/dtroncy/docker-rpi-chisel"><img src="https://badgen.net/travis/babel/babel?icon=travis&label=build"/></a>
+<img src="https://badgen.net/badge/platform/raspberry%20pi?list=1"/> <a href="https://hub.docker.com/r/dtroncy/rpi-chisel"><img src="https://badgen.net/badge/icon/docker?icon=docker&label"/></a> <a href="https://travis-ci.org/dtroncy/docker-rpi-chisel"><img src="https://badgen.net/travis/dtroncy/docker-rpi-chisel/master?icon=travis&label=build"/></a>
 
 This is a raspberry pi compatible <a href="https://github.com/jpillora/chisel">Chisel</a> DockerFile.
 
