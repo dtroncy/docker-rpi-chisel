@@ -1,7 +1,7 @@
 sudo: required
 language: bash
 env:
-  - chisel_version=1.7.1
+  - chisel_version=1.7.2
 # install last docker version
 before_install:
   - sudo apt-get remove docker docker-engine docker.io containerd runc
