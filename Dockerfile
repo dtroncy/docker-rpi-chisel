@@ -1,5 +1,5 @@
 # dtroncy/rpi-chisel
-FROM dtroncy/rpi-alpine:3.12.0
+FROM dtroncy/rpi-alpine:3.14.2
 
 ARG chisel_version
 
